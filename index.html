@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+        integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+</head>
+
+<body>
+    <!--Navbar with name on the left and links on the right-->
+    <nav class="navbar navbar-dark bg-dark">
+        <span class="navbar-brand mb-0 h1">Victor Mendizabal</span>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">About</a>
+            </li>
+        </ul>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+    </nav>
+    <!-- container div with image and personal info-->
+    <div class="container">
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <h2>About Me</h2>
+            </div>
+
+        </div>
+
+        <div class="row">
+
+            <div class="col-md-3">
+                <img src="images/65982afa-5f2d-4926-86a9-daa4f31dee0f.jpeg" alt="family" class="img-thumbnail">
+            </div>
+
+            <div class="col-md-3">
+                <div class="media">
+                    <div class="media-body">
+                        <h5 class="mt-0">Quick Bio</h5>
+                        <p>Hi, my full name is Victor Hugo Mendizabal Campos. My family and close friends calls me Hugo.
+                        </p>
+                        <p>I was born in Santa Cruz, Bolivia. I am the oldest of three and the only boy. My family
+                            decided
+                            to move to the United Sates when I was four years old. We first lived in New York city, but
+                            it
+                            was too called so a year later we found ourselves in Texas. I've lived in the DFW area for
+                            most
+                            of my life.</p>
+                        <p>Thanks to being born in a different country, I grew up bi-lingual. I speak English and
+                            Spanish.
+                            I also enjoy trying to learn new languages. I can get by understanding Portuguese, Italian,
+                            and
+                            French, but I can't speak or write in them. I do want to eventually learn Japannese so I can
+                            watch anime without sub titles.</p>
+                        <p>My current goal in life is to become a software developer and to buy my first home. I also
+                            love
+                            sports, any Dallas except the Rangers. I enjoy hiking, movies, anime, playing soccer, and
+                            traveling.</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        function myFunction() {
+          var x = document.getElementById("nav-item");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+     </script>
+
+
+</body>
+
+</html>
