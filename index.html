@@ -22,24 +22,27 @@
 </head>
 
 <body>
-    <!--Navbar with name on the left and links on the right-->
-    <nav class="navbar navbar-dark bg-dark">
-        <span class="navbar-brand mb-0 h1">Victor Mendizabal</span>
-        <ul class="nav justify-content-end">
-            <li class="nav-item">
-                <a class="nav-link" href="contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="portfolio.html">Portfolio</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="index.html">About</a>
-            </li>
-        </ul>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
-    </nav>
+    <!-- Simulate a smartphone / tablet -->
+    <div class="mobile-container">
+        <!--Navbar with name on the left and links on the right-->
+        <nav class="navbar navbar-dark bg-dark">
+            <span class="navbar-brand mb-0 h1">Victor Mendizabal</span>
+            <ul class="nav justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="portfolio.html">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">About</a>
+                </li>
+            </ul>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+        </nav>
+    </div>
     <!-- container div with image and personal info-->
     <div class="container">
 
@@ -52,50 +55,47 @@
         </div>
 
         <div class="row">
-
-            <div class="col-md-3">
-                <img src="images/65982afa-5f2d-4926-86a9-daa4f31dee0f.jpeg" alt="family" class="img-thumbnail">
-            </div>
-
-            <div class="col-md-3">
-                <div class="media">
-                    <div class="media-body">
-                        <h5 class="mt-0">Quick Bio</h5>
-                        <p>Hi, my full name is Victor Hugo Mendizabal Campos. My family and close friends calls me Hugo.
-                        </p>
-                        <p>I was born in Santa Cruz, Bolivia. I am the oldest of three and the only boy. My family
-                            decided
-                            to move to the United Sates when I was four years old. We first lived in New York city, but
-                            it
-                            was too called so a year later we found ourselves in Texas. I've lived in the DFW area for
-                            most
-                            of my life.</p>
-                        <p>Thanks to being born in a different country, I grew up bi-lingual. I speak English and
-                            Spanish.
-                            I also enjoy trying to learn new languages. I can get by understanding Portuguese, Italian,
-                            and
-                            French, but I can't speak or write in them. I do want to eventually learn Japannese so I can
-                            watch anime without sub titles.</p>
-                        <p>My current goal in life is to become a software developer and to buy my first home. I also
-                            love
-                            sports, any Dallas except the Rangers. I enjoy hiking, movies, anime, playing soccer, and
-                            traveling.</p>
-                    </div>
+            <div class="card" style="width: 24rem;">
+                <img src="images/65982afa-5f2d-4926-86a9-daa4f31dee0f.jpeg" class="card-img-top" alt="Family">
+                <div class="card-body">
+                    <h5 class="mt-0, card-text">Quick Bio</h5>
+                    <p class="card-text">Hi, my full name is Victor Hugo Mendizabal Campos. My family and close friends
+                        call me Hugo.
+                    </p>
+                    <p class="card-text"> I was born in Santa Cruz, Bolivia. I am the oldest of three and the only boy.
+                        My family
+                        decided
+                        to move to the United Sates when I was four years old. We first lived in New York city, but a year later we found ourselves in Texas. I've lived in the DFW area for
+                        most
+                        of my life.</p>
+                    <p class="card-text">Thanks to being born in a different country, I grew up bi-lingual. I speak
+                        English and
+                        Spanish.
+                        I also enjoy trying to learn new languages. I can get by understanding Portuguese, Italian,
+                        and
+                        French, but I can't speak or write in them. I do want to eventually learn Japannese so I can
+                        watch anime without sub titles.</p>
+                    <p class="card-text">My current goal in life is to become a software developer and to buy my first
+                        home. I also
+                        love
+                        sports, every Dallas team except the Rangers. I enjoy hiking, movies, anime, playing soccer, and
+                        traveling.</p>
                 </div>
             </div>
+
 
         </div>
     </div>
     <script>
         function myFunction() {
-          var x = document.getElementById("nav-item");
-          if (x.style.display === "block") {
-            x.style.display = "none";
-          } else {
-            x.style.display = "block";
-          }
+            var x = document.getElementsByClassName("nav-item");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
         }
-     </script>
+    </script>
 
 
 </body>
