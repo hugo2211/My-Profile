@@ -12,23 +12,15 @@ p {
     padding: 5px;
     font-weight: bolder;
 }
+.card {
+  padding: 10px;
+  margin: 10px;
+}
        
 .row {
         padding: 10px;
        }
 
-.float-left {
-    float: left;
-    padding: 10px;
-}
-
-.float-right {
-    float: right;
-    padding: 10px
-}
-.col-md-3 {
-    padding-block-end: 40px;
-}
 nav a.icon{
     display: none;
 }
@@ -71,6 +63,14 @@ nav a.icon{
 }
 
 @media screen and (max-width: 400px) {
+  .mobile-container {
+    max-width: 400px;
+    margin: auto;
+    background-color: #555;
+    height: 500px;
+    color: white;
+    border-radius: 10px;
+  }
 .container {
     width: 100%;
 }
